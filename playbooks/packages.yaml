@@ -1,0 +1,6 @@
+---
+- name: packages
+  hosts: local
+  become: true
+  roles:
+    - role: "./packages/"
