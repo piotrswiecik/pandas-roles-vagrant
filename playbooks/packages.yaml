@@ -4,3 +4,8 @@
   become: true
   roles:
     - role: "./packages/"
+- name: create group and user
+  hosts: local
+  become: true
+  roles:
+    - role: "./user/"
