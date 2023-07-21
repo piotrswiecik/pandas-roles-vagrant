@@ -6,6 +6,9 @@
     docker_users:
       - panda
       - vagrant
+    docker_daemon_options:
+      insecure_registries:
+        ["192.168.56.200"]
   roles:
     - user
     - packages
