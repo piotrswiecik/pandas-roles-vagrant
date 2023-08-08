@@ -1,0 +1,17 @@
+---
+- name: install python packages
+  pip:
+    name:
+      - docker
+      - docker-compose
+- name: clone infrastructure repo
+  git:
+    repo: "{{ git_repository }}"
+    dest: "{{ deployment_path }}"
+    version: "{{ git_branch }}"
+- name: start infrastructure through docker compose
+  community.docker.docker_compose:
+    project_src: "{{ deployment_path }}"
+    state: present
+    build: true
+    debug: true

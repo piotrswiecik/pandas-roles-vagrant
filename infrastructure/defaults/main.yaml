@@ -1,0 +1,4 @@
+---
+deployment_path: "~/infrastructure"
+git_repository: "https://github.com/piotrswiecik/pandas-infrastructure.git"
+git_branch: "master"
