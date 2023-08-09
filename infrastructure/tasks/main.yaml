@@ -14,3 +14,4 @@
     project_src: "{{ deployment_path }}"
     build: true
     debug: true
+  ignore_errors: true
